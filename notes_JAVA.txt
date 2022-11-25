@@ -1,0 +1,48 @@
+КОНСПЕКТ java
+
+Снипеты:
+cl квадратик class
+ma квадратик main - точка входа
+sysout
+
+Запуск java название.java
+/*
+комментарий
+*/
+//комментарий
+----------------------------------
+ТИПЫ ДАННЫХ И ПЕРЕМЕНЫХ
+1. Ссылочные - классы и интерфейсы
+                массивы
+2. Примитивы -  boolean
+                int, short, long и тд
+                float, double
+                char
+float e = 2.7f; // суффикс f обязателен
+double p = 5.66666;
+-----------------------------------
+int[] arr = new int[10];
+arr = new int[] {1, 2, 3, 4}
+arr.
+int[] arr[] = new int[3][4] многомерный массив
+int[][] arr= new int[3][4]
+-----------------------------------
+Получение ввода
+import java.util.Scanner
+в точке входа в программу:
+    Scanner iScanner = new Scanner(System.in);
+    System.out.printf("name: ");
+    String name = iScanner.nextLine(); или nextInt() hasNextInt возвращает флаг цифра или нет
+    System.out.printf("Привет, %s!\n", name);
+    iScanner.close();
+--------------------------------------
+String res = String.format("%d + %d = %d /n", a, b, c)
+System.out.printf("%d + %d = %d /n", a, b, c);
+Маски спецификаторы
+%d - целочисленные значения
+%f - Числа с плавающей точкой, %.2f - с 2 символами после запятой
+%c - вывод одиночного чара
+%s - вывод строки
+----------------------------------------
+String timeStr = String.valueOf(nowTime); конверт в стринг
+int num = Integer.valueOf(number);
