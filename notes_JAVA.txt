@@ -1,4 +1,5 @@
 КОНСПЕКТ java
+API - сторонний сервис для работы с чем-то (ТГ бот, яндекс карты, ВК, погода)
 
 Снипеты:
 cl квадратик class
@@ -44,5 +45,29 @@ System.out.printf("%d + %d = %d /n", a, b, c);
 %c - вывод одиночного чара
 %s - вывод строки
 ----------------------------------------
+СТРОКИ
+StringBuilder str = new StringBuilder(); оптимизирован под работу со строками
+    str.append(word); добавляет слово в конец
+    String result = str.toString(); конвертируем в строку
+
+
+----------------------------------------
 String timeStr = String.valueOf(nowTime); конверт в стринг
 int num = Integer.valueOf(number);
+------------------------------
+Запись файлов
+FileWriter writer = new FileWriter(fileName, true) второй параметр - записывать или нет
+writer.write(str); запись строки
+writer.append('E'); запись по символам
+writer.flush();    передает в файл все из буфера
+
+try(FileWriter writer = new FileWriter("notes3.txt", false))
+        {что делаем если такой файл найден}
+catch(IOException ex){
+            System.out.println(ex.getMessage()); запись ошибки передает в консоль
+        } 
+File f1=new File(path); обьект для работы с файлами
+
+
+
+https://academy.yandex.ru/journal/osnovnye-vidy-sortirovok-i-primery-ikh-realizatsii Виды сортировок

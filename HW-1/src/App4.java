@@ -15,7 +15,7 @@ public class App4 {
         String number2=expression.substring(index1+1, index2); 
         String summa=expression.substring(index2+1, expression.length()); 
         
-        // String[] numbers = expression.split("[+=]");
+        System.out.println(number1+number2+summa);
                
 
     }
