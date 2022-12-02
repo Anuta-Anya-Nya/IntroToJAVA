@@ -68,6 +68,8 @@ catch(IOException ex){
         } 
 File f1=new File(path); обьект для работы с файлами
 
-
+<>l; дженерик
+ArrayList<Integer> arr=new ArrayList<>(Arrays.asList(4,5,16,45,33,45,22)); сразу заполяем 
 
 https://academy.yandex.ru/journal/osnovnye-vidy-sortirovok-i-primery-ikh-realizatsii Виды сортировок
+STONE17th
